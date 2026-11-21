@@ -162,7 +162,8 @@ else in that file is published as written.
 
 The original is still on my machine. This is the copy I publish.
 
-## Status
+## License
 
-Public. No license yet, so the text isn't offered for reuse; if that changes,
-this line will say so.
+The text is [CC BY 4.0](LICENSE): reuse and adapt it with credit.
+`evidence/measure.mjs` is [MIT](LICENSE-MIT), because a content license is the
+wrong instrument for code.
