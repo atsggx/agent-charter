@@ -161,9 +161,3 @@ copy, and the hook rule moved to `PREFERENCES.md` with the rest of my choices.
 else in that file is published as written.
 
 The original is still on my machine. This is the copy I publish.
-
-## License
-
-The text is [CC BY 4.0](LICENSE): reuse and adapt it with credit.
-`evidence/measure.mjs` is [MIT](LICENSE-MIT), because a content license is the
-wrong instrument for code.
