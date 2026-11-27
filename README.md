@@ -17,12 +17,18 @@ of those ways done by hand. The ones worth naming, as of November 2026:
 |---|---|---|---|
 | [Claude Code auto memory](https://code.claude.com/docs/en/memory) | a `MEMORY.md` index plus topic files, loaded on demand | capturing lessons with no effort | covers a machine, not one repo, and gates restructuring |
 | [Hermes Agent](https://hermes-agent.nousresearch.com/docs/user-guide/features/memory) | two size-capped files, agent-written skills, and full-text session search | coherent always-on context, and recall when that fails | no harness lock-in, and no character budget to fight for |
+| [LifeOS](https://github.com/danielmiessler/LifeOS) | a constitution, 49 skills, and `USER`/`MEMORY` scaffolds in its own config root | goals and identity, plus breadth across research and writing | fits the harness it runs on, and keeps one store instead of two |
 | Mem0, Zep, Letta | facts extracted automatically into a vector or graph store | recall at scale | readable, diffable, versioned, and no service to run |
 | [grill-with-docs](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md) | a glossary and decision records in the repo | a paper trail for one change | runs unasked, and outlives the session |
 | This file | 25 skills in a folder, edited by the agent | a readable, auditable store with no runtime | — |
 
 Each cell in the last column is one axis, not a verdict. On capture, recall and
 consolidation, Hermes beats this file outright.
+
+LifeOS is the closest thing to this at scale, and the most useful one to study:
+the same shape of context file, skills, memory and hooks, with the opposite
+answer on who owns the process. It also needs hooks to behave as designed,
+which is why its own install table gives the full behavior only to Claude Code.
 
 They agree on the shape: keep a little loaded at all times, put the rest where
 the agent can fetch it on demand, and let the agent write to both. What differs
@@ -61,7 +67,7 @@ past sessions are searchable. The store also exists only inside that harness.
 As a rules file, the store is readable, diffable, easy to back up, movable to
 another harness, and correctable in a text editor. In exchange nothing is
 guaranteed: no write tool, no size cap, no duplicate check, no scan for injected
-instructions, no consolidation, and 27 MiB of skills with no index beyond the
+instructions, no consolidation, and 28 MiB of skills with no index beyond the
 description line at the top of each file. When the model ignores a rule, nothing
 catches it but me re-reading.
 
@@ -99,9 +105,9 @@ can't find what it wrote.
 | What | Number |
 |---|---|
 | Skill folders | 25 |
-| Files inside them | 513 |
-| Size | 27.7 MiB |
-| Last changed between | June 22 and November 20, 2026 |
+| Files inside them | 518 |
+| Size | 27.8 MiB |
+| Last changed between | June 22 and November 27, 2026 |
 | Written by hand (the rest are copied from vendor docs) | 16 of 25 |
 | Longer than 500 lines | 1 |
 | Descriptions over the 1024-character limit | 0 |
