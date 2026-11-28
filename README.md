@@ -35,7 +35,7 @@ the agent can fetch it on demand, and let the agent write to both.
 
 The rules are the implementation here. Claude Code and Hermes enforce the shape
 of their memory in code: a write tool, a size cap, a check before a write is
-saved. opencode enforces none of it. The agent can write any file, and nothing
+saved. OpenCode enforces none of it. The agent can write any file, and nothing
 but these rules decides what belongs in the folder, which file it goes in,
 whether it is true, and who may reorganise it.
 
