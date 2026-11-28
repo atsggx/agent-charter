@@ -20,7 +20,7 @@ of those ways done by hand. The ones worth naming, as of November 2026:
 | [LifeOS](https://github.com/danielmiessler/LifeOS) | a constitution, 97 skills, and `USER`/`MEMORY` scaffolds in its own config root | goals and identity, plus breadth across research and writing | fits the harness it runs on, and keeps one store instead of two |
 | Mem0, Zep, Letta | facts extracted automatically into a vector or graph store | recall at scale | readable, diffable, versioned, and no service to run |
 | [grill-with-docs](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md) | a glossary and decision records in the repo | a paper trail for one change | runs unasked, and outlives the session |
-| This file | 25 skills in a folder, edited by the agent | a readable, auditable store with no runtime | — |
+| This file | 29 skills in a folder, edited by the agent | a readable, auditable store with no runtime | — |
 
 Each cell in the last column is one axis, not a verdict. On capture, recall and
 consolidation, Hermes beats this file outright.
@@ -33,17 +33,12 @@ which is why its own install table gives the full behavior only to Claude Code.
 They agree on the shape: keep a little loaded at all times, put the rest where
 the agent can fetch it on demand, and let the agent write to both. What differs
 is who enforces the shape. Claude Code and Hermes enforce it in code; the files
-are an implementation detail. Here there's no runtime, so the rules are the
-implementation.
+are an implementation detail.
 
-### What's the same
-
-Curated files instead of a retrieval index. Procedures kept in skills rather
-than in the always-loaded prompt. The agent writes its own memory, and I can
-read every byte of it. Claude Code's own guidance now says to move a multi-step
-procedure out of `CLAUDE.md` and into a skill, and Hermes says a recurring
-task's location belongs in a skill rather than the 2,200-character memory
-budget. That split is the same one this file makes.
+Here the rules are the implementation, because the harness supplies a folder and
+no policy for it. A folder an agent can write to is not a memory system until
+someone decides what may be written, where it goes, what counts as true, and who
+may reorganise it. The rest of this file is those four decisions.
 
 ### What's different
 
@@ -56,21 +51,6 @@ budget. That split is the same one this file makes.
    "reorganise the folder", and that distinction is most of what this file is
    about.
 
-### The trade
-
-No runtime sits behind these rules, and that cuts both ways.
-
-Hermes and Claude Code implement memory in code, so capture happens without
-effort, a size cap forces consolidation, writes can be staged for review, and
-past sessions are searchable. The store also exists only inside that harness.
-
-As a rules file, the store is readable, diffable, easy to back up, movable to
-another harness, and correctable in a text editor. In exchange nothing is
-guaranteed: no write tool, no size cap, no duplicate check, no scan for injected
-instructions, no consolidation, and 28 MiB of skills with no index beyond the
-description line at the top of each file. When the model ignores a rule, nothing
-catches it but me re-reading.
-
 ### The closest one to compare against
 
 `grill-with-docs` is the nearest single skill, and it differs on three things. I
@@ -79,26 +59,6 @@ is the person being interviewed; mine is the machine being investigated. And it
 ends when the session does, while this one is trying to be true next month. Its
 failure mode is a session that produces nothing; mine is knowledge that goes
 stale and contradicts itself.
-
-## It assumes a harness with skills
-
-The systems with a runtime can keep their instruction file short, because the
-runtime does the remembering. A harness that only hands you a folder gives you
-nothing, so the discipline has to come from the file. That's what makes mine
-short, and why it only makes sense in this kind of harness.
-
-The rules about knowledge assume three things:
-
-1. The harness can load a skill only when a task matches, so the knowledge costs
-   nothing until it's needed.
-2. The agent can write files, and they're still there next week.
-3. That folder is somewhere the next session will look.
-
-Take any of them away and the file stops meaning anything. Without on-demand
-loading, "write it in a skill" turns into "paste it into the prompt", and the
-prompt grows every session until it's too long to follow. Without persistence,
-the knowledge is gone by morning. Without a predictable place to look, the agent
-can't find what it wrote.
 
 ## Proof the folder is real
 
