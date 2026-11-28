@@ -31,14 +31,13 @@ answer on who owns the process. It also needs hooks to behave as designed,
 which is why its own install table gives the full behavior only to Claude Code.
 
 They agree on the shape: keep a little loaded at all times, put the rest where
-the agent can fetch it on demand, and let the agent write to both. What differs
-is who enforces the shape. Claude Code and Hermes enforce it in code; the files
-are an implementation detail.
+the agent can fetch it on demand, and let the agent write to both.
 
-Here the rules are the implementation, because the harness supplies a folder and
-no policy for it. A folder an agent can write to is not a memory system until
-someone decides what may be written, where it goes, what counts as true, and who
-may reorganise it. The rest of this file is those four decisions.
+The rules are the implementation here. Claude Code and Hermes enforce the shape
+of their memory in code: a write tool, a size cap, a check before a write is
+saved. opencode enforces none of it. The agent can write any file, and nothing
+but these rules decides what belongs in the folder, which file it goes in,
+whether it is true, and who may reorganise it.
 
 ### What's different
 
