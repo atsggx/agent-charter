@@ -104,11 +104,11 @@ can't find what it wrote.
 
 | What | Number |
 |---|---|
-| Skill folders | 25 |
-| Files inside them | 518 |
+| Skill folders | 29 |
+| Files inside them | 522 |
 | Size | 27.8 MiB |
-| Last changed between | June 22 and November 27, 2026 |
-| Written by hand (the rest are copied from vendor docs) | 16 of 25 |
+| Last changed between | June 22 and November 28, 2026 |
+| Written by hand (the rest are copied from vendor docs) | 20 of 29 |
 | Longer than 500 lines | 1 |
 | Descriptions over the 1024-character limit | 0 |
 
@@ -167,3 +167,14 @@ copy, and the hook rule moved to `PREFERENCES.md` with the rest of my choices.
 else in that file is published as written.
 
 The original is still on my machine. This is the copy I publish.
+
+## Credits
+
+The taxonomy of rule kinds and the evidence standard in `AGENTS.md` are adapted
+from [LifeOS](https://github.com/danielmiessler/LifeOS) by Daniel Miessler, MIT:
+`BitterLessonEngineering` for sorting rules by kind, and `Research` for link
+verification, source depth and how a refusal is handled.
+
+Four skills behind the counts above also began as LifeOS skills (`Presentation`,
+`StoryExplanation`, `WriteStory`, `HTML`) and were rewritten to run here
+without LifeOS's TypeScript tools.

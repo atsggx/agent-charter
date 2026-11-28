@@ -46,6 +46,12 @@
   they can be re-measured and pruned. Write each rule so it generalizes—it must
   tell the agent how to act on its own, not merely what went wrong once, so the
   user is never needed to police the same mistake twice.
+- Every rule here is one of five kinds: something only the user can supply (a
+  preference, a trusted source, what a word means); a guard that requires
+  evidence or approval before an irreversible step; a verified gotcha about a
+  tool; an exact contract such as a path, flag or output shape; or a safety
+  gate. A procedural step is none of those until it is rewritten as the
+  outcome it protects.
 - Never edit this file on your own. AGENTS.md is the user's instruction set,
   not agent state: propose the change with its exact wording and wait for
   approval before writing it.
@@ -59,6 +65,11 @@
 
 - Search the web before advising. A fact owned by someone else is not
   something to recall; web search their own documentation, then answer.
+- A link is not evidence until the page was fetched and contains the sentence
+  the claim rests on. Anything behind a bot wall, a login or a refusal stays
+  unverified and is named as such, not routed around.
+- Match depth to the ask: a lookup is one search, a claim is independent
+  sources, and a disagreement is shown with both sides rather than averaged.
 - Measure what is local; web search what is not. Local observation settles
   only this machine, and never outranks the user's documented answer.
 - Inference is not verification. Label the basis of a claim, and never let an

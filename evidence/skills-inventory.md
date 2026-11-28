@@ -1,6 +1,6 @@
 # Skills inventory
 
-Generated from `~\.config\opencode\skills` on 2026-11-27T20:12:18.172Z.
+Generated from `~\.config\opencode\skills` on 2026-11-28T03:38:34.783Z.
 
 Every number below is re-derivable:
 
@@ -16,13 +16,13 @@ so regenerating the report cannot leak what it measures.
 
 | Measure | Value |
 |---|---|
-| Skills | 25 |
-| Files | 518 |
-| Bytes | 28451.0 KB |
+| Skills | 29 |
+| Files | 522 |
+| Bytes | 28458.8 KB |
 | Oldest last-modified | 2026-06-22 |
-| Newest last-modified | 2026-11-27 |
-| Skills with a `SKILL.md` | 25 |
-| Hand-written (no references/, scripts/, assets/) | 16 |
+| Newest last-modified | 2026-11-28 |
+| Skills with a `SKILL.md` | 29 |
+| Hand-written (no references/, scripts/, assets/) | 20 |
 | Vendored or script-backed | 9 |
 
 ## Per skill
@@ -37,8 +37,10 @@ so regenerating the report cannot leak what it measures.
 | `cloudflare-one-migrations` | 1 | 12.1 KB | 108 | 187 | 2026-06-22 | flat |
 | `discord-vencord` | 80 | 24950.6 KB | 97 | 354 | 2026-11-16 | scripts |
 | `durable-objects` | 4 | 27.8 KB | 184 | 382 | 2026-06-22 | references |
+| `fiction-dev` | 1 | 1.7 KB | 29 | 346 | 2026-11-28 | flat |
 | `haos-access` | 1 | 6.4 KB | 109 | 347 | 2026-10-22 | flat |
 | `herdr` | 1 | 15.2 KB | 216 | 328 | 2026-11-08 | flat |
+| `html-artifact` | 1 | 2.3 KB | 48 | 241 | 2026-11-28 | flat |
 | `nvidia-broadcast` | 1 | 6.7 KB | 125 | 500 | 2026-11-20 | flat |
 | `ollama-decisions` | 20 | 1608.9 KB | 98 | 471 | 2026-11-18 | flat |
 | `opencode-local` | 1 | 4.2 KB | 65 | 448 | 2026-11-20 | flat |
@@ -48,7 +50,9 @@ so regenerating the report cannot leak what it measures.
 | `router` | 1 | 5.3 KB | 106 | 399 | 2026-10-23 | flat |
 | `sandbox-sdk` | 3 | 10.3 KB | 175 | 343 | 2026-06-22 | references |
 | `ssh-access` | 1 | 12.5 KB | 198 | 379 | 2026-11-27 | flat |
+| `story-explanation` | 1 | 1.7 KB | 34 | 337 | 2026-11-28 | flat |
 | `synthid` | 2 | 10.6 KB | 180 | 465 | 2026-10-23 | flat |
+| `talks` | 1 | 2.0 KB | 31 | 342 | 2026-11-28 | flat |
 | `trackmania-clips` | 6 | 33.2 KB | 122 | 410 | 2026-11-25 | flat |
 | `turnstile-spin` | 32 | 111.3 KB | 158 | 383 | 2026-06-22 | references + scripts |
 | `windows-host` | 1 | 14.1 KB | 260 | 566 | 2026-11-23 | flat |
