@@ -17,7 +17,7 @@ of those ways done by hand. The ones worth naming, as of November 2026:
 |---|---|---|---|
 | [Claude Code auto memory](https://code.claude.com/docs/en/memory) | a `MEMORY.md` index plus topic files, loaded on demand | capturing lessons with no effort | covers a machine, not one repo, and gates restructuring |
 | [Hermes Agent](https://hermes-agent.nousresearch.com/docs/user-guide/features/memory) | two size-capped files, agent-written skills, and full-text session search | coherent always-on context, and recall when that fails | no harness lock-in, and no character budget to fight for |
-| [LifeOS](https://github.com/danielmiessler/LifeOS) | a constitution, 49 skills, and `USER`/`MEMORY` scaffolds in its own config root | goals and identity, plus breadth across research and writing | fits the harness it runs on, and keeps one store instead of two |
+| [LifeOS](https://github.com/danielmiessler/LifeOS) | a constitution, 97 skills, and `USER`/`MEMORY` scaffolds in its own config root | goals and identity, plus breadth across research and writing | fits the harness it runs on, and keeps one store instead of two |
 | Mem0, Zep, Letta | facts extracted automatically into a vector or graph store | recall at scale | readable, diffable, versioned, and no service to run |
 | [grill-with-docs](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md) | a glossary and decision records in the repo | a paper trail for one change | runs unasked, and outlives the session |
 | This file | 25 skills in a folder, edited by the agent | a readable, auditable store with no runtime | — |
